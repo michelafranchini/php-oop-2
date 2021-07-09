@@ -11,13 +11,13 @@
 
         public function setDiscount() {
             if($this->categoryName = "alimentari") {
-                $this->discount = 20; 
-            } else if ($this->categoryName = "tech") {
-                $this->discount = 10; 
+                $this->discount = 30; 
             } else {
                 $this->discount = 0;
+                echo "nessuno sconto"; 
             }
-        }
+
+        } 
     }
 
 ?>

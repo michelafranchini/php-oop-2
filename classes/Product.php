@@ -11,7 +11,7 @@
         public $lastPrice; 
 
         // COSTRUTTORE
-        function __construct($productName, $brand, $price, $image = "", $description, $categoryName) {
+        function __construct($productName, $brand, $price, $image = "", $description, $categoryName = "") {
             $this->productName = $productName; 
             $this->brand = $brand;
             $this->price = $price;
@@ -19,10 +19,10 @@
             $this->description = $description; 
             parent::__construct($categoryName); 
             $this->categoryName = $categoryName; 
-
+            
         }
 
-        // METODI
+        //METODI
         public function finalPrice() {
             $this->setDiscount(); 
             $lastPrice = $this->price - ($this->price * ($this->discount / 100)); 
